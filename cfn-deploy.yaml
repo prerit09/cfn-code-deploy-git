@@ -1,5 +1,5 @@
 template-file-path: template.yaml
 parameters:
-  BucketTag: From Git
-  AnotherBucketTag: Another From Git
+  BucketTag: Test Admin From Git
+  AnotherBucketTag: Test Admin From Git
 tags: {}
