@@ -4,6 +4,10 @@ Parameters:
     Description: Tag Val of S3
     Type: String
     Default: "Hello World"
+  AnotherBucketTag:
+    Description: Tag Val of S3
+    Type: String
+    Default: "Hello World"
 Resources:
   Bucket:
     Type: AWS::S3::Bucket
