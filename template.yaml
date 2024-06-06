@@ -41,6 +41,24 @@ Resources:
           Value: "Git Demo2"
         - Key: "Dynamic Tag"
           Value: !Ref AnotherBucketTag
+  ThirdAnotherBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Sub ${AWS::StackName}-thirdanotherbucket-${AWS::AccountId}
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+      PublicAccessBlockConfiguration:
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+      Tags:
+        - Key: "Application"
+          Value: "Git Demo2"
+        
+        
+
+        
 
         
 
